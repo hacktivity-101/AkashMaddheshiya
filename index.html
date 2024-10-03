@@ -333,43 +333,69 @@
     </section>
 
     <section class="section__container blog__container" id="blog">
-      <p class="section__subheader">Blog Posts</p>
-      <h2 class="section__header">I Love To Write Articles</h2>
+      <p class="section__subheader">Certificate</p>
+      <h2 class="section__header">Showcasing My expertise</h2>
       <div class="blog__grid">
         <div class="blog__card">
           <img src="assets/blog-1.jpg" alt="blog" />
-          <p>Case Study</p>
-          <h4>Turning Clicks into Conversions with PPC</h4>
+          <p>IBM Cloud Essentials</p>
+          <h4>IBM Cloud Essentials certifies foundational skills in IBM cloud services.</h4>
           <a href="#">Read More</a>
         </div>
         <div class="blog__card">
           <img src="assets/blog-2.jpg" alt="blog" />
-          <p>Educational/How-To</p>
-          <h4>The Ultimate Guide to Website Accessibility</h4>
+          <p>Mobile Applicaton Development</p>
+          <h4>Certificate covering the fundamentals of app disign and development.</h4>
           <a href="#">Read More</a>
         </div>
         <div class="blog__card">
           <img src="assets/blog-3.jpg" alt="blog" />
-          <p>Trend Analysis</p>
-          <h4>2024 Web Design Trends: What's In and What's Out</h4>
+          <p>Google My Business</p>
+          <h4>Certified for optimizing business profiles for online presence.</h4>
           <a href="#">Read More</a>
         </div>
       </div>
     </section>
 
-    <section class="section__container contact__container" id="contact">
+    <section class="section_container contact_container" id="contact">
       <p class="section__subheader">Contact Us</p>
       <h2 class="section__header">Get In Touch</h2>
-      <form action="/" class="contact__form">
+      <form id="contactForm" action="https://formspree.io/f/xldrqqgz" method="POST" class="contact__form">
         <div class="input__row">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
+          <input type="text" name="firstName" placeholder="First Name" required />
+          <input type="text" name="lastName" placeholder="Last Name" required />
         </div>
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Description" />
-        <button class="btn">Submit</button>
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="description" placeholder="Description" required />
+        <button class="btn" type="submit">Submit</button>
       </form>
     </section>
+    
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+    
+        // Formspree submission using Fetch API
+        const formData = new FormData(this);
+    
+        fetch(this.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            // Redirect to thank you page after successful submission
+            window.location.href = "http://127.0.0.1:5500/thankyou.html";
+          } else {
+            alert('Oops! There was a problem submitting your form.');
+          }
+        }).catch(error => {
+          alert('Oops! There was a problem submitting your form.');
+        });
+      });
+    </script>
 
     <footer class="footer">
       <div class="section__container footer__container">
