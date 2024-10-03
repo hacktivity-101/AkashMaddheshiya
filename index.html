@@ -36,8 +36,8 @@
             <li class="link"><a href="#about">About</a></li>
             <li class="link"><a href="#project">Projects</a></li>
             <li class="link"><a href="#service">Services</a></li>
-            <li class="link"><a href="#client">Clients</a></li>
-            <li class="link"><a href="#blog">Blog</a></li>
+            <li class="link"><a href="#skills">Skills</a></li>
+            <li class="link"><a href="#Certificate">Certificate</a></li>
             <li class="link btn"><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -231,98 +231,65 @@
       </div>
     </section>
 
-    <section class="section__container client__container" id="client">
-      <p class="section__subheader">Testimonials</p>
-      <h2 class="section__header">What Our Clients Say About Us</h2>
+    <section class="section_container skills_container" id="skills">
+      <p class="section__subheader">Skills</p>
+      <h2 class="section__header">My Key Skills</h2>
       <!-- Slider main container -->
       <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <!-- Slides -->
+          <!-- Skill 1 -->
           <div class="swiper-slide">
-            <div class="client__card">
-              <img src="assets/client-1.jpg" alt="client" />
+            <div class="skills__card">
+              <img src="assets/skill-1.jpg" alt="JavaScript" />
               <div>
                 <p>
-                  They transformed our online presence with their SEO and
-                  content marketing services. Our website now ranks higher in
-                  search results, and the quality of leads has improved
-                  substantially. I highly recommend their digital marketing
-                  expertise.
+                  <strong>JavaScript:</strong> Experienced in building dynamic and interactive web applications, ensuring seamless user experiences.
                 </p>
-                <h4>John Miller <span>CEO, Corporation</span></h4>
-                <div class="client__ratings">
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-half-fill"></i></span>
-                  <span><i class="ri-star-line"></i></span>
-                </div>
               </div>
             </div>
           </div>
+          <!-- Skill 2 -->
           <div class="swiper-slide">
-            <div class="client__card">
-              <img src="assets/client-2.jpg" alt="client" />
+            <div class="skills__card">
+              <img src="assets/skill-2.jpg" alt="React" />
               <div>
                 <p>
-                  Working with them has been a game-changer for our business.
-                  Their web development expertise helped us create a sleek and
-                  responsive website that has significantly increased our online
-                  sales. Their dedication and innovative solutions truly set
-                  them apart.
+                  <strong>React:</strong> Proficient in developing responsive, reusable UI components with efficient state management.
                 </p>
-                <h4>Sarah Thompson <span>Marketing Director</span></h4>
-                <div class="client__ratings">
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-line"></i></span>
-                </div>
               </div>
             </div>
           </div>
+          <!-- Skill 3 -->
           <div class="swiper-slide">
-            <div class="client__card">
-              <img src="assets/client-3.jpg" alt="client" />
+            <div class="skills__card">
+              <img src="assets/skill-3.jpg" alt="Node.js" />
               <div>
                 <p>
-                  Our digital marketing strategy needed a revamp, and they
-                  delivered outstanding results. Their team's creative approach
-                  to PPC campaigns and social media advertising has generated a
-                  significant increase in our website traffic and conversions.
+                  <strong>Node.js:</strong> Back-end development expertise, creating scalable APIs and handling real-time data with ease.
                 </p>
-                <h4>David Peterson <span>Marketing Manager</span></h4>
-                <div class="client__ratings">
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-half-fill"></i></span>
-                </div>
               </div>
             </div>
           </div>
+          <!-- Skill 4 -->
           <div class="swiper-slide">
-            <div class="client__card">
-              <img src="assets/client-4.jpg" alt="client" />
+            <div class="skills__card">
+              <img src="assets/skill-4.jpg" alt="MySQL & MongoDB" />
               <div>
                 <p>
-                  The mobile app they developed for our company exceeded our
-                  expectations. Not only is it user-friendly, but it also helped
-                  us connect with our customers on a whole new level. Their
-                  attention to detail and commitment to delivering on time were
-                  exceptional.
+                  <strong>MySQL & MongoDB:</strong> Extensive experience in relational and non-relational databases, proficient in queries and optimization.
                 </p>
-                <h4>Harrison Rogers <span>Product Manager</span></h4>
-                <div class="client__ratings">
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Skill 5 -->
+          <div class="swiper-slide">
+            <div class="skills__card">
+              <img src="assets/skill-5.jpg" alt="Git" />
+              <div>
+                <p>
+                  <strong>Git:</strong> Version control expertise, enabling smooth collaboration on projects with branching and merging.
+                </p>
               </div>
             </div>
           </div>
@@ -330,28 +297,97 @@
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
       </div>
-    </section>
-
-    <section class="section__container blog__container" id="blog">
+    </section> 
+    
+    <!-- CSS to fix image size and layout -->
+    <style>
+      .skills__container {
+        padding: 50px 0;
+        text-align: center;
+      }
+    
+      .skills__card {
+        display: flex;
+        align-items: center;
+        background: var(--primary-color-dark );
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgb(238, 229, 51);
+        transition: transform 0.3s ease;
+      }
+    
+      .skills__card:hover {
+        transform: translateY(-10px); 
+      }
+    
+      .skills__card img {
+        width: 80px;  /* Reduced size */
+        height: 80px;
+        object-fit: contain;
+        margin-right: 20px;
+        border-radius: 8px;
+      }
+    
+      .skills__card p {
+        margin: 0;
+        font-size: 16px;
+        color: #000;
+      }
+    
+      .skills__card strong {
+        color: #6c63ff;
+      }
+    
+      .swiper-container {
+        width: 80%;
+        margin: 0 auto;
+      }
+    
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .swiper-pagination-bullet {
+        background-color: #f1f507;
+      }
+    </style>
+    
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+      var swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+    <section class="section__container blog__container" id="Certificate">
       <p class="section__subheader">Certificate</p>
       <h2 class="section__header">Showcasing My expertise</h2>
       <div class="blog__grid">
         <div class="blog__card">
-          <img src="assets/blog-1.jpg" alt="blog" />
+          <img src="assets/blog-1.jpg" alt="Certificate" />
           <p>IBM Cloud Essentials</p>
           <h4>IBM Cloud Essentials certifies foundational skills in IBM cloud services.</h4>
           <a href="#">Read More</a>
         </div>
         <div class="blog__card">
-          <img src="assets/blog-2.jpg" alt="blog" />
+          <img src="assets/blog-2.jpg" alt="Certificate" />
           <p>Mobile Applicaton Development</p>
           <h4>Certificate covering the fundamentals of app disign and development.</h4>
           <a href="#">Read More</a>
         </div>
         <div class="blog__card">
-          <img src="assets/blog-3.jpg" alt="blog" />
+          <img src="assets/blog-3.jpg" alt="Certificate" />
           <p>Google My Business</p>
-          <h4>Certified for optimizing business profiles for online presence.</h4>
+          <h4>Certified for optimizing business profiles for online</h4>
           <a href="#">Read More</a>
         </div>
       </div>
@@ -387,7 +423,7 @@
         }).then(response => {
           if (response.ok) {
             // Redirect to thank you page after successful submission
-            window.location.href = "http://127.0.0.1:5500/thankyou.html";
+            window.location.href = "thankyou.html";
           } else {
             alert('Oops! There was a problem submitting your form.');
           }
@@ -406,28 +442,25 @@
             for turning lines of code into captivating online experiences.
           </p>
           <div class="footer__socials">
-            <a href="#"><i class="ri-mail-fill"></i></a>
-            <a href="#"><i class="ri-github-fill"></i></a>
-            <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="mailto:maddyakash2136@gmail.com"><i class="ri-mail-fill"></i></a>
+           <a href="https://www.linkedin.com/in/akashmaddheshiya"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://github.com/hacktivity-101"><i class="ri-github-fill"></i></a>
             <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#"><i class="ri-dribbble-line"></i></a>
           </div>
         </div>
         <div class="footer__col">
           <h4>Services</h4>
           <div class="footer__links">
-            <a href="#">Web Design</a>
-            <a href="#">App Design</a>
-            <a href="#">Photography</a>
-            <a href="#">Videography</a>
-            <a href="#">Web Development</a>
+            <a href="#service">Web Design</a>
+            <a href="#service">App Design</a>
+            <a href="#service">Web Development</a>
           </div>
         </div>
         <div class="footer__col">
           <h4>Support</h4>
           <div class="footer__links">
-            <a href="#">Contact</a>
-            <a href="#">My Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="mailto:maddyakash2136@gmail.com">Mail US</a>
             <a href="#">Privacy Policy</a>
           </div>
         </div>
